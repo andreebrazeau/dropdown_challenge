@@ -1,0 +1,40 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  background-color: orange;
+  position: relative;
+  border-top: solid 1px;
+  cursor: pointer;
+}
+
+/* remove the border-top of first element*/
+.menu-item:first-child {
+  border-top: 0;
+}
+
+/* to vertically do center align text */
+.menu-item p {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.menu-item .dropdown-content{
+  position: absolute;
+  left: 195px;
+  top: -1px;
+  display: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
